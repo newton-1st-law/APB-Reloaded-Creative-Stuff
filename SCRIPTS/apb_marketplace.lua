@@ -1,4 +1,4 @@
-function ClickPosition(posX, posY) -- ФУНКЦИЯ ПЕРЕМЕЩЕНИЯ мышКИ
+function ClickPosition(posX, posY) -- MOVING MOUSE FUNCTION
     
     local x, y = GetMousePosition();
     local step = 25;
@@ -69,122 +69,219 @@ end
 
 function OnEvent(event, arg)
 
-    if (event == "G_PRESSED" and arg == 9) then
+    if (event == "G_PRESSED" and arg == 6) then -- REMOVING MAILS
         
-        ClickPosition(27594, 20347);
+--		SetBacklightColor(255, 0, 0, "kb");
+		ClickPosition(27594, 20347);
         ClickPosition(47503, 33344);
+        ClickPosition(47503, 34984);
         ClickPosition(39034, 51566);
         ClickPosition(32785, 35106);
-    end
-end
 
-function ClickPosition(posX, posY)
-    
-    local x, y = GetMousePosition();
-    local step = 25;
-    
-    while x ~= posX or y ~= posY do
+    elseif (event == "G_PRESSED" and arg == 7) then -- SALE OF SYMBOLS
+        
+        ClickPosition(10211, 58125);
+        ClickPosition(23803, 20893);
+        ClickPosition(20968, 29700);
+		ClickPosition(28721, 46524);
 		
-        if x ~= posX then
-        
-			local dX = math.abs(x - posX);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
 		
-            if x > posX then
-                
-                if dX < step * 35 then
-                    
-                    MoveMouseRelative(-1, 0);
-                else
-                    
-                    MoveMouseRelative(-step, 0);
-                end
-            else
-            
-                if dX < step * 35 then
-                    
-                    MoveMouseRelative(1, 0);
-                else
-                    
-                    MoveMouseRelative(step, 0);
-                end
-            end
-        end
-        
-        if y ~= posY then
-        
-			local dY = math.abs(y - posY);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
 		
-            if y > posY then
-                
-                if dY < step * 61 then
-                    
-                    MoveMouseRelative(0, -1);
-                else
-                    
-                    MoveMouseRelative(0, -step);
-                end
-            else
-                
-                if dY < step * 61 then
-                    
-                    MoveMouseRelative(0, 1);
-                else
-                    
-                    MoveMouseRelative(0, step);
-                end
-            end
-        end
-        
-        Sleep(1);
-        x, y = GetMousePosition();
-    end
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
 
-	Sleep(50);
-    PressMouseButton(1);
-	Sleep(50);
-    ReleaseMouseButton(1);
-	Sleep(50);
+    elseif (event == "G_PRESSED" and arg == 8) then -- SALE OF CLOTHES
+        
+        ClickPosition(10211, 58125);
+        ClickPosition(23803, 20893);
+        ClickPosition(20934, 26785);
+		ClickPosition(28721, 46524);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		MoveMouseWheel(-1);
+		
+    elseif (event == "G_PRESSED" and arg == 1) then -- PRICE: 2147483646 - 2147483646
 	
-end
-
-function OnEvent1(event, arg) -- ФУНКЦИЯ ОЧИСТКИ ПОЧТЫ
-
-    if (event == "G_PRESSED" and arg == 8) then
-        
-        ClickPosition(27594, 20347);
-        ClickPosition(47503, 33344);
-        ClickPosition(39034, 51566);
-        ClickPosition(32785, 35106);
-    end
-end
-
---[[ -- НЕ РАБОТАЕТ
-function OnEvent2(event, arg) -- ФУНКЦИЯ ВЫБОРА ОДЕЖДЫ \ СИМВОЛОВ
-
-    if (event == "G_PRESSED" and arg == 1) then
-        
-        ClickPosition(13285, 11844); -- КНОПКА - МОИ АУКЦИОНЫ
-        ClickPosition(10074, 58064); -- КНОПКА - ОБЪЯВИТЬ НОВЫЙ АУКЦИОН
-        ClickPosition(23154, 21015); -- КНОПКА РАСКРЫТИЯ КАТЕГОРИИ ТОВАРОВ
-		while true do
+        ClickPosition(43952, 49015);
+        ClickPosition(31794, 24902);
+		PressAndReleaseKey("2", "1", "4", "7", "4", "8", "3", "6", "4", "6");
+        ClickPosition(31726, 27089);
+		PressAndReleaseKey("2", "1", "4", "7", "4", "8", "3", "6", "4", "6");
+        ClickPosition(37019, 42576);
 		
-			if (event == "PressAndReleaseKey" and arg == "0x02") then
+    elseif (event == "G_PRESSED" and arg == 2) then -- PRICE: 25000 - 31250
+	
+        ClickPosition(43952, 49015);
+        ClickPosition(31794, 24902);
+		PressAndReleaseKey("2", "5", "0", "0", "0");
+        ClickPosition(31726, 27089);
+		PressAndReleaseKey("3", "1", "2", "5", "0");
+        ClickPosition(37019, 42576);
 		
-				ClickPosition(20968, 29883); -- СИМВОЛЫ
-			elseif	(event == "PressAndReleaseKey" and arg == "0x03") then
-				ClickPosition(21105, 26663); -- ОДЕЖДА
-			
-			elseif	(event == "PressAndReleaseKey" and arg == "0x04") then
-				break
-			end
-		end
-	end
-end
---]]
+    elseif (event == "G_PRESSED" and arg == 3) then -- PRICE: 18750 - 25000
+	
+        ClickPosition(43952, 49015);
+        ClickPosition(31794, 24902);
+		PressAndReleaseKey("1", "8", "7", "5", "0");
+        ClickPosition(31726, 27089);
+		PressAndReleaseKey("2", "5", "0", "0", "0");
+        ClickPosition(37019, 42576);
+		
+    elseif (event == "G_PRESSED" and arg == 4) then -- PRICE: 12500 - 18750
+	
+        ClickPosition(43952, 49015);
+        ClickPosition(31794, 24902);
+		PressAndReleaseKey("1", "2", "5", "0", "0");
+        ClickPosition(31726, 27089);
+		PressAndReleaseKey("1", "8", "7", "5", "0");
+        ClickPosition(37019, 42576);
+		
+    elseif (event == "G_PRESSED" and arg == 5) then -- PRICE: 6250 - 12500
+	
+        ClickPosition(43952, 49015);
+        ClickPosition(31794, 24902);
+		PressAndReleaseKey("6", "2", "5", "0");
+        ClickPosition(31726, 27089);
+		PressAndReleaseKey("1", "2", "5", "0", "0");
+        ClickPosition(37019, 42576);
 
-function OnEvent3(event, arg) -- ФУНКЦИЯ ВЫВОДА КООРДИНАТ МЫШКИ
-
-    if (event == "G_PRESSED" and arg == 8) then
+    elseif (event == "G_PRESSED" and arg == 9) then -- GET MOUSE POSITION
         
 		x, y = GetMousePosition();
 		OutputLogMessage("Mouse is at %d, %d\n", x, y);
