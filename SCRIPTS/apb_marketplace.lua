@@ -61,9 +61,22 @@ function ClickPosition(posX, posY) -- MOVING MOUSE FUNCTION
 
 	Sleep(50);
     PressMouseButton(1);
-	Sleep(50);
+	Sleep(75);
     ReleaseMouseButton(1);
 	Sleep(50);
+	
+end
+
+function StepMouseWheel(mmw)
+
+	local step = 1;
+	
+	while step < mmw do
+	
+		MoveMouseWheel(-1);
+		Sleep(5);
+		step = step + 1
+	end
 	
 end
 
@@ -83,158 +96,16 @@ function OnEvent(event, arg)
         ClickPosition(10211, 58125);
         ClickPosition(23803, 20893);
         ClickPosition(20968, 29700);
+		StepMouseWheel(75);
 		ClickPosition(28721, 46524);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
 
     elseif (event == "G_PRESSED" and arg == 8) then -- SALE OF CLOTHES
         
         ClickPosition(10211, 58125);
         ClickPosition(23803, 20893);
         ClickPosition(20934, 26785);
+		StepMouseWheel(75);
 		ClickPosition(28721, 46524);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
-		MoveMouseWheel(-1);
 		
     elseif (event == "G_PRESSED" and arg == 1) then -- PRICE: 2147483646 - 2147483646
 	
