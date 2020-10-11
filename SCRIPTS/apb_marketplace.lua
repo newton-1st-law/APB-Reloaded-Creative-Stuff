@@ -92,7 +92,8 @@ function OnEvent(event, arg)
         ClickPosition(32785, 35106);
 
     elseif (event == "G_PRESSED" and arg == 7) then -- SALE OF SYMBOLS
-        
+	
+        ClickPosition(13489, 11783);
         ClickPosition(10211, 58125);
         ClickPosition(23803, 20893);
         ClickPosition(20968, 29700);
@@ -100,7 +101,8 @@ function OnEvent(event, arg)
 		ClickPosition(28721, 46524);
 
     elseif (event == "G_PRESSED" and arg == 8) then -- SALE OF CLOTHES
-        
+	
+        ClickPosition(13489, 11783);
         ClickPosition(10211, 58125);
         ClickPosition(23803, 20893);
         ClickPosition(20934, 26785);
@@ -152,9 +154,13 @@ function OnEvent(event, arg)
 		PressAndReleaseKey("1", "2", "5", "0", "0");
         ClickPosition(37019, 42576);
 
-    elseif (event == "G_PRESSED" and arg == 9) then -- GET MOUSE POSITION
+    elseif (event == "G_PRESSED" and arg == 9) then -- GET MOUSE POSITION \ MAKE A ONE COPY OF ITEM
         
 		x, y = GetMousePosition();
 		OutputLogMessage("Mouse is at %d, %d\n", x, y);
+        ClickPosition(42347, 47132);
+        ClickPosition(42244, 41665);
+        ClickPosition(36336, 38568);
+		
     end
 end
