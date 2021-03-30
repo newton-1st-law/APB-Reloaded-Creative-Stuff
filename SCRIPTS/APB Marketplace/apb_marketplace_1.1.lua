@@ -79,14 +79,15 @@ function StepMouseWheel(mmw)
 	end
 end
 
-function SortList(sl)
-	
-	sl = true;
-	
-	if sl == true then
+function SortList()
+
+	if not sl then
 		
 		ClickPosition(48494, 13241);
-		sl = false;
+		Sleep (10);
+		ClickPosition(48494, 13241);
+		sl = true;
+
 	end
 end
 
@@ -141,7 +142,7 @@ function OnEvent(event, arg)
     elseif (event == "G_PRESSED" and arg == 7) and current_mkey == 2 then -- SALE OF SYMBOLS
 	
 		ClickPosition(13489, 11783);
---		SortList();
+	--	SortList();
         ClickPosition(10211, 58125);
         ClickPosition(23803, 20893);
         ClickPosition(20968, 29700);
@@ -151,7 +152,7 @@ function OnEvent(event, arg)
     elseif (event == "G_PRESSED" and arg == 8) and current_mkey == 2 then -- SALE OF CLOTHES
 	
         ClickPosition(13489, 11783);
---		SortList();
+	--	SortList();
         ClickPosition(10211, 58125);
         ClickPosition(23803, 20893);
         ClickPosition(20934, 26785);
