@@ -1,6 +1,6 @@
 function OnEvent(event, arg)
 
-	if event == "MOUSE_BUTTON_PRESSED" and arg == 9 then
+	if event =="G_PRESSED" and arg == 1 then
 		
 		OutputLogMessage("MOUSE WHEEL UP\n");
 		
@@ -14,7 +14,7 @@ function OnEvent(event, arg)
 		
 		OutputLogMessage("STOP\n");
 	
-	elseif event == "MOUSE_BUTTON_PRESSED" and arg == 8 then
+	elseif event =="G_PRESSED" and arg == 2 then
 		
 		OutputLogMessage("MOUSE WHEEL DOWN\n");
 		

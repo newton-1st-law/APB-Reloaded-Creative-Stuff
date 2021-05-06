@@ -131,32 +131,82 @@ function OnEvent(event, arg)
 
 	current_mkey = GetMKeyState();
 	
-    if (event == "G_PRESSED" and arg == 6) and current_mkey == 2 then -- REMOVING MAILS
+    if (event == "G_PRESSED" and arg == 6) and current_mkey == 2 and IsKeyLockOn("capslock" ) then -- REMOVING 5 MAILS
         
 		ClickPosition(27594, 20347);
-        ClickPosition(47503, 33344);
-        ClickPosition(47503, 34984);
-        ClickPosition(39034, 51566);
-        ClickPosition(32785, 35106);
+		ClickPosition(47503, 33344);
+		ClickPosition(47503, 34984);
+		ClickPosition(39034, 51566);
+		ClickPosition(32785, 35106);
+			Sleep(100);
+		ClickPosition(27594, 20347);
+		ClickPosition(47503, 33344);
+		ClickPosition(47503, 34984);
+		ClickPosition(39034, 51566);
+		ClickPosition(32785, 35106);
+			Sleep(100);
+		ClickPosition(27594, 20347);
+		ClickPosition(47503, 33344);
+		ClickPosition(47503, 34984);
+		ClickPosition(39034, 51566);
+		ClickPosition(32785, 35106);
+			Sleep(100);
+		ClickPosition(27594, 20347);
+		ClickPosition(47503, 33344);
+		ClickPosition(47503, 34984);
+		ClickPosition(39034, 51566);
+		ClickPosition(32785, 35106);
+			Sleep(100);
+		ClickPosition(27594, 20347);
+		ClickPosition(47503, 33344);
+		ClickPosition(47503, 34984);
+		ClickPosition(39034, 51566);
+		ClickPosition(32785, 35106);
+		OutputLogMessage("5 MAILS REMOVED\n");
+		
+    elseif (event == "G_PRESSED" and arg == 6) and current_mkey == 2 then -- REMOVING 1 MAIL
+        
+		ClickPosition(27594, 20347);
+		ClickPosition(47503, 33344);
+		ClickPosition(47503, 34984);
+		ClickPosition(39034, 51566);
+		ClickPosition(32785, 35106);
+		OutputLogMessage("1 MAIL REMOVED\n");
 
-    elseif (event == "G_PRESSED" and arg == 7) and current_mkey == 2 then -- SALE OF SYMBOLS
+    elseif (event == "G_PRESSED" and arg == 7) and current_mkey == 2 and IsKeyLockOn("capslock" ) then -- SALE OF SYMBOLS
 	
 		ClickPosition(13489, 11783);
-	--	SortList();
         ClickPosition(10211, 58125);
         ClickPosition(23803, 20893);
         ClickPosition(20968, 29700);
 		StepMouseWheel(75);
 		ClickPosition(28721, 46524);
 
-    elseif (event == "G_PRESSED" and arg == 8) and current_mkey == 2 then -- SALE OF CLOTHES
+    elseif (event == "G_PRESSED" and arg == 7) and current_mkey == 2 then -- SALE OF SYMBOLS
+	
+		ClickPosition(13489, 11783);
+        ClickPosition(10211, 58125);
+        ClickPosition(23803, 20893);
+        ClickPosition(20968, 29700);
+	--	StepMouseWheel(-75);
+		ClickPosition(28721, 46524);
+
+    elseif (event == "G_PRESSED" and arg == 8) and current_mkey == 2 and IsKeyLockOn("capslock" ) then -- SALE OF CLOTHES
 	
         ClickPosition(13489, 11783);
-	--	SortList();
         ClickPosition(10211, 58125);
         ClickPosition(23803, 20893);
         ClickPosition(20934, 26785);
 		StepMouseWheel(75);
+		ClickPosition(28721, 46524);
+
+    elseif (event == "G_PRESSED" and arg == 8) and current_mkey == 2 then -- SALE OF CLOTHES
+	
+        ClickPosition(13489, 11783);
+        ClickPosition(10211, 58125);
+        ClickPosition(23803, 20893);
+        ClickPosition(20934, 26785);
+	--	StepMouseWheel(-75);
 		ClickPosition(28721, 46524);
 		
     elseif (event == "G_PRESSED" and arg == 1) and current_mkey == 2 then -- PRICE: 2147483646 - 2147483646
@@ -204,13 +254,21 @@ function OnEvent(event, arg)
 		PressAndReleaseKey("1", "2", "5", "0", "0");
         ClickPosition(37019, 42576);
 
-    elseif (event == "G_PRESSED" and arg == 9) and current_mkey == 2 then -- GET MOUSE POSITION \ MAKE A ONE COPY OF ITEM
+    elseif (event == "G_PRESSED" and arg == 9) and current_mkey == 2 and IsKeyLockOn("capslock" ) then -- REMOVE ITEM FROM MARKETPLACE
         
-		x, y = GetMousePosition();
-		OutputLogMessage("Mouse is at %d, %d\n", x, y);
+		ClickPosition(10177, 15002);
+		ClickPosition(55529, 58247);
+
+    elseif (event == "G_PRESSED" and arg == 9) and current_mkey == 2 then -- MAKE A ONE COPY OF ITEM
+        
         ClickPosition(42347, 47132);
         ClickPosition(42244, 41665);
         ClickPosition(36336, 38568);
+		
+    elseif (event == "G_PRESSED" and arg == 9) and current_mkey == 1 then -- GET MOUSE POSITION
+        
+		x, y = GetMousePosition();
+		OutputLogMessage("Mouse is at %d, %d\n", x, y);
 		
     elseif (event == "G_PRESSED" and arg == 1) and current_mkey == 3 then -- USE SIREN MODE 1
         
