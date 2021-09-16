@@ -176,45 +176,63 @@ function OnEvent(event, arg)
     elseif (event == "G_PRESSED" and arg == 7) and current_mkey == 2 and IsKeyLockOn("capslock" ) then -- SALE OF SYMBOLS
 	
 		ClickPosition(13489, 11783);
+			Sleep(10);
         ClickPosition(10211, 58125);
+			Sleep(10);
         ClickPosition(23803, 20893);
+			Sleep(10);
         ClickPosition(20968, 29700);
+			Sleep(10);
 		StepMouseWheel(75);
+			Sleep(10);
 		ClickPosition(28721, 46524);
 
     elseif (event == "G_PRESSED" and arg == 7) and current_mkey == 2 then -- SALE OF SYMBOLS
 	
 		ClickPosition(13489, 11783);
+			Sleep(10);
         ClickPosition(10211, 58125);
+			Sleep(10);
         ClickPosition(23803, 20893);
+			Sleep(10);
         ClickPosition(20968, 29700);
-	--	StepMouseWheel(-75);
+			Sleep(10);
 		ClickPosition(28721, 46524);
 
     elseif (event == "G_PRESSED" and arg == 8) and current_mkey == 2 and IsKeyLockOn("capslock" ) then -- SALE OF CLOTHES
 	
         ClickPosition(13489, 11783);
+			Sleep(10);
         ClickPosition(10211, 58125);
+			Sleep(10);
         ClickPosition(23803, 20893);
+			Sleep(10);
         ClickPosition(20934, 26785);
+			Sleep(10);
 		StepMouseWheel(75);
+			Sleep(10);
 		ClickPosition(28721, 46524);
 
     elseif (event == "G_PRESSED" and arg == 8) and current_mkey == 2 then -- SALE OF CLOTHES
 	
         ClickPosition(13489, 11783);
+			Sleep(10);
         ClickPosition(10211, 58125);
+			Sleep(10);
         ClickPosition(23803, 20893);
+			Sleep(10);
         ClickPosition(20934, 26785);
-	--	StepMouseWheel(-75);
+			Sleep(10);
 		ClickPosition(28721, 46524);
 		
     elseif (event == "G_PRESSED" and arg == 1) and current_mkey == 2 then -- PRICE: 2147483646 - 2147483646
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
+			Sleep(10);
 		PressAndReleaseKey("2", "1", "4", "7", "4", "8", "3", "6", "4", "6");
         ClickPosition(31726, 27089);
+			Sleep(10);
 		PressAndReleaseKey("2", "1", "4", "7", "4", "8", "3", "6", "4", "6");
         ClickPosition(37019, 42576);
 		
@@ -222,8 +240,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
+			Sleep(10);
 		PressAndReleaseKey("2", "5", "0", "0", "0");
         ClickPosition(31726, 27089);
+			Sleep(10);
 		PressAndReleaseKey("3", "1", "2", "5", "0");
         ClickPosition(37019, 42576);
 		
@@ -231,8 +251,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
+			Sleep(10);
 		PressAndReleaseKey("1", "8", "7", "5", "0");
         ClickPosition(31726, 27089);
+			Sleep(10);
 		PressAndReleaseKey("2", "5", "0", "0", "0");
         ClickPosition(37019, 42576);
 		
@@ -240,8 +262,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
+			Sleep(10);
 		PressAndReleaseKey("1", "2", "5", "0", "0");
         ClickPosition(31726, 27089);
+			Sleep(10);
 		PressAndReleaseKey("1", "8", "7", "5", "0");
         ClickPosition(37019, 42576);
 		
@@ -249,8 +273,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
+			Sleep(10);
 		PressAndReleaseKey("6", "2", "5", "0");
         ClickPosition(31726, 27089);
+			Sleep(10);
 		PressAndReleaseKey("1", "2", "5", "0", "0");
         ClickPosition(37019, 42576);
 
