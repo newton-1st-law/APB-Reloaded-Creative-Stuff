@@ -229,10 +229,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("2", "1", "4", "7", "4", "8", "3", "6", "4", "6");
         ClickPosition(31726, 27089);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("2", "1", "4", "7", "4", "8", "3", "6", "4", "6");
         ClickPosition(37019, 42576);
 		
@@ -240,10 +240,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("2", "5", "0", "0", "0");
         ClickPosition(31726, 27089);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("3", "1", "2", "5", "0");
         ClickPosition(37019, 42576);
 		
@@ -251,10 +251,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("1", "8", "7", "5", "0");
         ClickPosition(31726, 27089);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("2", "5", "0", "0", "0");
         ClickPosition(37019, 42576);
 		
@@ -262,10 +262,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("1", "2", "5", "0", "0");
         ClickPosition(31726, 27089);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("1", "8", "7", "5", "0");
         ClickPosition(37019, 42576);
 		
@@ -273,10 +273,10 @@ function OnEvent(event, arg)
 	
         ClickPosition(43952, 49015);
         ClickPosition(31794, 24902);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("6", "2", "5", "0");
         ClickPosition(31726, 27089);
-			Sleep(10);
+			Sleep(50);
 		PressAndReleaseKey("1", "2", "5", "0", "0");
         ClickPosition(37019, 42576);
 
