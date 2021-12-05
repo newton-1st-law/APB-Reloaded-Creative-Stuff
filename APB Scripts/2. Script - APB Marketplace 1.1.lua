@@ -131,6 +131,8 @@ function OnEvent(event, arg)
 
 	current_mkey = GetMKeyState();
 	
+	local x, y = GetMousePosition();	-- возврат к позиции
+	
     if (event == "G_PRESSED" and arg == 6) and current_mkey == 2 and IsKeyLockOn("capslock" ) then -- REMOVING 5 MAILS
         
 		ClickPosition(27594, 20347);
@@ -185,6 +187,7 @@ function OnEvent(event, arg)
 			Sleep(10);
 		StepMouseWheel(75);
 			Sleep(10);
+		ClickPosition(28721, 46524);
 		ClickPosition(28721, 46524);
 
     elseif (event == "G_PRESSED" and arg == 7) and current_mkey == 2 then -- SALE OF SYMBOLS
