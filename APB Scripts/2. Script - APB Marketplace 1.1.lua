@@ -188,7 +188,6 @@ function OnEvent(event, arg)
 		StepMouseWheel(75);
 			Sleep(10);
 		ClickPosition(28721, 46524);
-		ClickPosition(28721, 46524);
 
     elseif (event == "G_PRESSED" and arg == 7) and current_mkey == 2 then -- SALE OF SYMBOLS
 	
@@ -310,6 +309,31 @@ function OnEvent(event, arg)
     elseif (event == "G_PRESSED" and arg == 3) and current_mkey == 3 then -- USE SIREN MODE 3
         
 		SirenMode3(2);
+
+
+--[[
+    elseif (event == "G_PRESSED" and arg == 5) and current_mkey == 3 then -- EVENT BOT ACTIVATE
+        
+		OutputLogMessage("EVENT BOT ACTIVATED\n");
 		
+		repeat
+		
+			PressAndReleaseKey("lctrl");
+			Sleep(250)
+			PressAndReleaseMouseButton(1);
+			Sleep(100);
+			PressAndReleaseMouseButton(1);
+			Sleep(100);
+			PressAndReleaseMouseButton(1);
+			Sleep(100);
+			OutputLogMessage("BOT IN PROGRESS\n");
+			Sleep(10000);
+			ClickPosition(29916, 13362);
+			Sleep(100);
+			
+		until IsMouseButtonPressed(2)
+		
+			OutputLogMessage("BOT STOPPED\n");
+]]--
 	end
 end
