@@ -286,6 +286,7 @@ function OnEvent(event, arg)
         
 		ClickPosition(10177, 15002);
 		ClickPosition(55529, 58247);
+		ClickPosition(55529, 58247);
 
     elseif (event == "G_PRESSED" and arg == 9) and current_mkey == 2 then -- MAKE A ONE COPY OF ITEM
         
@@ -309,31 +310,5 @@ function OnEvent(event, arg)
     elseif (event == "G_PRESSED" and arg == 3) and current_mkey == 3 then -- USE SIREN MODE 3
         
 		SirenMode3(2);
-
-
---[[
-    elseif (event == "G_PRESSED" and arg == 5) and current_mkey == 3 then -- EVENT BOT ACTIVATE
-        
-		OutputLogMessage("EVENT BOT ACTIVATED\n");
-		
-		repeat
-		
-			PressAndReleaseKey("lctrl");
-			Sleep(250)
-			PressAndReleaseMouseButton(1);
-			Sleep(100);
-			PressAndReleaseMouseButton(1);
-			Sleep(100);
-			PressAndReleaseMouseButton(1);
-			Sleep(100);
-			OutputLogMessage("BOT IN PROGRESS\n");
-			Sleep(10000);
-			ClickPosition(29916, 13362);
-			Sleep(100);
-			
-		until IsMouseButtonPressed(2)
-		
-			OutputLogMessage("BOT STOPPED\n");
-]]--
 	end
 end
